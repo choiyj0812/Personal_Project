@@ -37,7 +37,7 @@ int direction;
 int key;
 int speed;
 
-void Gotoxy(int x, int y, char* word) {
+void Gotoxy(int x, int y, const char* word) {
 	COORD pos = { (short)x * 2,(short)y };
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
 	printf("%s", word);
